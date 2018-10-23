@@ -46,17 +46,67 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>lfv_niederoesterreich_1030x1030_vxw_icon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\Documents\Visual Studio Projekte\Bezirk\Bezirk_English\Bezirk\bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.AppContext, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.AppContext.4.3.0\lib\net46\System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=1.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.3.1\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Console, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Console.4.3.0\lib\net46\System.Console.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.3.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Globalization.Calendars, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Globalization.Calendars.4.3.0\lib\net46\System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Interactive.Async, Version=3.0.3000.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Interactive.Async.3.1.1\lib\net46\System.Interactive.Async.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.4.3.0\lib\net46\System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.Compression.ZipFile, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.ZipFile.4.3.0\lib\net46\System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.4.3.0\lib\net46\System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.4.3.0\lib\net46\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Sockets.4.3.0\lib\net46\System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml.ReaderWriter, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Xml.ReaderWriter.4.3.0\lib\net46\System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -72,11 +122,84 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="admin.Designer.vb">
+      <DependentUpon>admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="admin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="busy.Designer.vb">
+      <DependentUpon>busy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="busy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="einsatz_tab.Designer.vb">
+      <DependentUpon>einsatz_tab.vb</DependentUpon>
+    </Compile>
+    <Compile Include="einsatz_tab.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="karte.Designer.vb">
+      <DependentUpon>karte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="karte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lockinginformation.Designer.vb">
+      <DependentUpon>lockinginformation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="lockinginformation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mobile-beta.Designer.vb">
+      <DependentUpon>mobile-beta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mobile-beta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="passwort_change.Designer.vb">
+      <DependentUpon>passwort_change.vb</DependentUpon>
+    </Compile>
+    <Compile Include="passwort_change.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resizer.vb" />
+    <Compile Include="street_help.Designer.vb">
+      <DependentUpon>street_help.vb</DependentUpon>
+    </Compile>
+    <Compile Include="street_help.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test-alarm-tool.Designer.vb">
+      <DependentUpon>test-alarm-tool.vb</DependentUpon>
+    </Compile>
+    <Compile Include="test-alarm-tool.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="verify.Designer.vb">
+      <DependentUpon>verify.vb</DependentUpon>
+    </Compile>
+    <Compile Include="verify.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alamiert.Designer.vb">
+      <DependentUpon>alamiert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="alamiert.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="emergency.Designer.vb">
+      <DependentUpon>emergency.vb</DependentUpon>
+    </Compile>
+    <Compile Include="emergency.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="idle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="idle.Designer.vb">
+      <DependentUpon>idle.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -94,13 +217,67 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="status.Designer.vb">
+      <DependentUpon>status.vb</DependentUpon>
+    </Compile>
+    <Compile Include="status.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="token.Designer.vb">
+      <DependentUpon>token.vb</DependentUpon>
+    </Compile>
+    <Compile Include="token.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="admin.resx">
+      <DependentUpon>admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="busy.resx">
+      <DependentUpon>busy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="einsatz_tab.resx">
+      <DependentUpon>einsatz_tab.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="karte.resx">
+      <DependentUpon>karte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lockinginformation.resx">
+      <DependentUpon>lockinginformation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mobile-beta.resx">
+      <DependentUpon>mobile-beta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="passwort_change.resx">
+      <DependentUpon>passwort_change.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test-alarm-tool.resx">
+      <DependentUpon>test-alarm-tool.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="verify.resx">
+      <DependentUpon>verify.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alamiert.resx">
+      <DependentUpon>alamiert.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emergency.resx">
+      <DependentUpon>emergency.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="idle.resx">
+      <DependentUpon>idle.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="status.resx">
+      <DependentUpon>status.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="token.resx">
+      <DependentUpon>token.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -114,6 +291,27 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\b1a15de406b35fdc2e852a42f12b2944d6abadee_00.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b3f53d7914ff10ec4035b313c215a782.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0d4dd542-f423-435f-b24a-ce056da9404d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lfv_niederoesterreich-1030x1030.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lfv_niederoesterreich_1030x1030_vxw_icon.ico" />
+    <None Include="Resources\placeholder.png" />
+    <None Include="Resources\grisu.png" />
+    <None Include="Resources\samsung-galaxy-s8-midnight-black-1-3x.png" />
+    <None Include="Resources\male-user.png" />
+    <None Include="Resources\1533468546_Call of Duty WWII _%29.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
