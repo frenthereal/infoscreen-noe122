@@ -665,6 +665,67 @@ Namespace My
                 Me("passwort") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
+        Public Property devmod() As Boolean
+            Get
+                Return CType(Me("devmod"),Boolean)
+            End Get
+            Set
+                Me("devmod") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property new_log() As String
+            Get
+                Return CType(Me("new_log"),String)
+            End Get
+            Set
+                Me("new_log") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
+        Public Property new_log_string() As Boolean
+            Get
+                Return CType(Me("new_log_string"),Boolean)
+            End Get
+            Set
+                Me("new_log_string") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("NOE 122 Infoscreen 0.2 | powered by Krati Studios | O. Kratochwill, A. Cech, M. F"& _ 
+            "oltin, T. Ploder, F. Wagner | austrian-modding.com")>  _
+        Public Property bottom_text() As String
+            Get
+                Return CType(Me("bottom_text"),String)
+            End Get
+            Set
+                Me("bottom_text") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property msgbox_text() As String
+            Get
+                Return CType(Me("msgbox_text"),String)
+            End Get
+            Set
+                Me("msgbox_text") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

@@ -4,8 +4,9 @@
         Label3.Text = DateTime.Now.ToString("HH:mm:ss")
     End Sub
     Private Sub busy_Load(sender As Object, e As EventArgs) Handles Me.Load
+        Label1.Text = My.Settings.bottom_text
         Label3.Text = DateTime.Now.ToString("HH:mm:ss")
-        Label2.Text = DateTime.Now.ToString("dd/MM/yyyy")
+        Label2.Text = DateTime.Now.ToString("dd.MM.yyyy")
         My.Settings.alamiert = False
         einsatz_tab.Show()
         Timer1.Start()
@@ -19,5 +20,9 @@
 
         idle.Show()
         Me.Close()
+    End Sub
+
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+
     End Sub
 End Class

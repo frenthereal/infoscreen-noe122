@@ -87,11 +87,11 @@ Partial Class busy
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.Label3.Font = New System.Drawing.Font("Arial", 27.0!)
+        Me.Label3.Font = New System.Drawing.Font("Arial", 30.0!, System.Drawing.FontStyle.Bold)
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(1710, 1033)
+        Me.Label3.Location = New System.Drawing.Point(1694, 1025)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(192, 41)
+        Me.Label3.Size = New System.Drawing.Size(214, 46)
         Me.Label3.TabIndex = 19
         Me.Label3.Text = "$UHRZEIT"
         '
@@ -99,11 +99,11 @@ Partial Class busy
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.Label2.Font = New System.Drawing.Font("Arial", 27.0!)
+        Me.Label2.Font = New System.Drawing.Font("Arial", 30.0!, System.Drawing.FontStyle.Bold)
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(1494, 1033)
+        Me.Label2.Location = New System.Drawing.Point(1461, 1025)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(160, 41)
+        Me.Label2.Size = New System.Drawing.Size(181, 46)
         Me.Label2.TabIndex = 18
         Me.Label2.Text = "$DATUM"
         '
@@ -113,7 +113,7 @@ Partial Class busy
         Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.Label4.Font = New System.Drawing.Font("Arial", 17.0!)
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(61, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(6, 1045)
+        Me.Label4.Location = New System.Drawing.Point(12, 1041)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(1301, 26)
         Me.Label4.TabIndex = 17

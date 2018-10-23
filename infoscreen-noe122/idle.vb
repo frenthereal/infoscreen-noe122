@@ -1,4 +1,5 @@
 ﻿Imports MySql.Data.MySqlClient
+Imports Gecko
 Public Class idle
     Dim MysqlConn As MySqlConnection
     Dim cmd As New MySqlCommand
@@ -6,12 +7,11 @@ Public Class idle
     Dim rs As New Resizer
 
 
-    Protected Overrides Sub OnLoad(ByVal e As System.EventArgs)
-        Me.Height = My.Computer.Screen.WorkingArea.Height
-        MyBase.OnLoad(e)
-    End Sub
-
     Private Sub idle_load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Label1.Text = My.Settings.bottom_text
+        If My.Settings.devmod = True Then
+            devmod.Show()
+        End If
         Label3.Text = DateTime.Now.ToString("HH:mm:ss")
         If My.Settings.token = False Then
             token.Show()
@@ -29,12 +29,7 @@ Public Class idle
         einsatz2melde.Text = My.Settings.Einsatz2Stufe
         einsatz2ort.Text = My.Settings.einsatz2ort
         einsatz2stufe.Text = My.Settings.Einsatz2Text
-
-
-
-        Me.FormBorderStyle = Windows.Forms.FormBorderStyle.None
-        Me.WindowState = FormWindowState.Maximized
-        Label2.Text = DateTime.Now.ToString("dd/MM/yyyy")
+        Label2.Text = DateTime.Now.ToString("dd.MM.yyyy")
         My.Settings.alamiert = False
         einsatz_tab.Show()
         Timer1.Start()
@@ -126,6 +121,7 @@ Public Class idle
             End If
         End If
     End Sub
+
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
         If My.Settings.letze_einsätze = False Then
             Panel1.Visible = False
@@ -209,6 +205,14 @@ Public Class idle
     End Sub
 
     Private Sub WebBrowser1_DocumentCompleted_1(sender As Object, e As WebBrowserDocumentCompletedEventArgs) Handles WebBrowser1.DocumentCompleted
+
+    End Sub
+
+    Private Sub einsatz2melde_Click(sender As Object, e As EventArgs) Handles einsatz2melde.Click
+
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
 
     End Sub
 End Class

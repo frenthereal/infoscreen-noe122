@@ -155,5 +155,20 @@
     <Setting Name="passwort" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
+    <Setting Name="devmod" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="new_log" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="new_log_string" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="bottom_text" Type="System.String" Scope="User">
+      <Value Profile="(Default)">NOE 122 Infoscreen 0.2 | powered by Krati Studios | O. Kratochwill, A. Cech, M. Foltin, T. Ploder, F. Wagner | austrian-modding.com</Value>
+    </Setting>
+    <Setting Name="msgbox_text" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>

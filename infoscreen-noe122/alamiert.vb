@@ -2,6 +2,7 @@
     Dim nowdate As Date
     Dim currenttimezone As TimeZone = TimeZone.CurrentTimeZone
     Private Sub alamiert_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Label11.Text = My.Settings.bottom_text
         Label3.Text = DateTime.Now.ToString("HH:mm:ss")
         Label8.Text = My.Settings.accept
         Label9.Text = My.Settings.denied
@@ -52,7 +53,7 @@
         gasse.Text = My.Settings.straße
         info.Text = My.Settings.infos
         Label7.Text = "Abschnitt: " & My.Settings.abschnitt
-        Label2.Text = DateTime.Now.ToString("dd/MM/yyyy")
+        Label2.Text = DateTime.Now.ToString("dd.MM.yyyy")
         If My.Settings.einsatzstufe = 1 Then
             STUFE.Text = "B1"
             PictureBox2.BackColor = Color.FromArgb(224, 55, 55)

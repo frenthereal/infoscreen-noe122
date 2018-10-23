@@ -118,11 +118,15 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        My.Settings.new_log_string = True
+        My.Settings.new_log = DateTime.Now.ToString("dd/MM/yyyy ") & DateTime.Now.ToString(" HH:mm:ss ") & "Grisu | Komme!"
         My.Settings.accept = +1
         Me.Close()
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        My.Settings.new_log_string = True
+        My.Settings.new_log = DateTime.Now.ToString("dd.MM.yyyy ") & DateTime.Now.ToString(" HH:mm:ss ") & "Grisu | Komme nicht!"
         My.Settings.denied = +1
         Me.Close()
     End Sub

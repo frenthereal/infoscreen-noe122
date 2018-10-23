@@ -84,11 +84,11 @@ Partial Class idle
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.Label2.Font = New System.Drawing.Font("Arial", 27.0!)
+        Me.Label2.Font = New System.Drawing.Font("Arial", 30.0!, System.Drawing.FontStyle.Bold)
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(1500, 1030)
+        Me.Label2.Location = New System.Drawing.Point(1461, 1026)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(160, 41)
+        Me.Label2.Size = New System.Drawing.Size(181, 46)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "$DATUM"
         '
@@ -96,11 +96,11 @@ Partial Class idle
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.Label3.Font = New System.Drawing.Font("Arial", 27.0!)
+        Me.Label3.Font = New System.Drawing.Font("Arial", 30.0!, System.Drawing.FontStyle.Bold)
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(1716, 1030)
+        Me.Label3.Location = New System.Drawing.Point(1694, 1026)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(192, 41)
+        Me.Label3.Size = New System.Drawing.Size(214, 46)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "$UHRZEIT"
         '
@@ -322,11 +322,11 @@ Partial Class idle
         '
         Me.einsatz2melde.AutoSize = True
         Me.einsatz2melde.BackColor = System.Drawing.Color.Transparent
-        Me.einsatz2melde.Font = New System.Drawing.Font("Arial", 40.0!)
+        Me.einsatz2melde.Font = New System.Drawing.Font("Arial", 30.0!, System.Drawing.FontStyle.Bold)
         Me.einsatz2melde.ForeColor = System.Drawing.Color.White
         Me.einsatz2melde.Location = New System.Drawing.Point(195, 256)
         Me.einsatz2melde.Name = "einsatz2melde"
-        Me.einsatz2melde.Size = New System.Drawing.Size(599, 61)
+        Me.einsatz2melde.Size = New System.Drawing.Size(461, 46)
         Me.einsatz2melde.TabIndex = 11
         Me.einsatz2melde.Text = "TUS- od. Infranet-Alarm"
         '

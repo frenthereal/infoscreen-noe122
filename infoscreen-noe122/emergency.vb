@@ -4,6 +4,8 @@ Imports Discord.Webhook
 Public Class emergency
     Dim locked As Boolean
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles starten.Click
+        My.Settings.new_log_string = True
+        My.Settings.new_log = DateTime.Now.ToString("dd/MM/yyyy ") & DateTime.Now.ToString(" HH:mm:ss ") & "Neuer Einsatz angelegt!"
         idle.Close()
         My.Settings.emergency_numberduoble = My.Settings.emergency_numberduoble + 1
         My.Settings.emergency_number = "BN " & My.Settings.emergency_numberduoble
@@ -50,7 +52,8 @@ Public Class emergency
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles stoppen.Click
-
+        My.Settings.new_log_string = True
+        My.Settings.new_log = DateTime.Now.ToString("dd/MM/yyyy ") & DateTime.Now.ToString(" HH:mm:ss ") & "Einsatz wurde Storniert!"
         My.Settings.accept = 0
         My.Settings.denied = 0
         My.Settings.Einsatz1Ort = My.Settings.ort
@@ -81,6 +84,8 @@ Public Class emergency
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        My.Settings.new_log_string = True
+        My.Settings.new_log = DateTime.Now.ToString("dd/MM/yyyy ") & DateTime.Now.ToString(" HH:mm:ss ") & "Einsatzdaten wurden aktualisiert!"
         mobile_beta.Close()
         My.Settings.grisu_refresh = True
         My.Settings.alarmart = ComboBox2.Text

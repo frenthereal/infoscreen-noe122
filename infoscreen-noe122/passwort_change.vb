@@ -1,6 +1,7 @@
 ﻿Public Class passwort_change
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        MsgBox("Das Passwort wurde erfolgreich geändert!")
+        My.Settings.msgbox_text = "Das Passwort wurde erfolgreich geändert!"
+        msgbox.Show()
         My.Settings.passwort = TextBox1.Text
         TextBox1.Text = My.Settings.passwort
         My.Settings.Save()

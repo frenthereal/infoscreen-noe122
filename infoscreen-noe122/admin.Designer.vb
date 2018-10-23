@@ -24,9 +24,6 @@ Partial Class admin
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(admin))
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
@@ -50,49 +47,18 @@ Partial Class admin
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.LinkLabel4 = New System.Windows.Forms.LinkLabel()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.CheckBox7 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox8 = New System.Windows.Forms.CheckBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.LinkLabel5 = New System.Windows.Forms.LinkLabel()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.Label3.Font = New System.Drawing.Font("Arial", 27.0!)
-        Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(1716, 1033)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(192, 41)
-        Me.Label3.TabIndex = 7
-        Me.Label3.Text = "$UHRZEIT"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.Label2.Font = New System.Drawing.Font("Arial", 27.0!)
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(1500, 1033)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(160, 41)
-        Me.Label2.TabIndex = 6
-        Me.Label2.Text = "$DATUM"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.Label1.Font = New System.Drawing.Font("Arial", 17.0!)
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(61, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(12, 1045)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(1301, 26)
-        Me.Label1.TabIndex = 5
-        Me.Label1.Text = "WASTL Infoscreen 3.2 | Powered by FF Krems | A. Suppan, S. Spanninger, E. Bachmay" &
-    "er, G. Urschler | www.feuerwehr-krems.at"
         '
         'Timer1
         '
@@ -347,16 +313,6 @@ Partial Class admin
         Me.LinkLabel4.TabStop = True
         Me.LinkLabel4.Text = "Abbrechen"
         '
-        'Button1
-        '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Button1.Location = New System.Drawing.Point(284, 925)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(115, 33)
-        Me.Button1.TabIndex = 31
-        Me.Button1.Text = "Speichern"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'PictureBox2
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer))
@@ -366,6 +322,80 @@ Partial Class admin
         Me.PictureBox2.TabIndex = 8
         Me.PictureBox2.TabStop = False
         '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
+        Me.Label10.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Label10.Location = New System.Drawing.Point(102, 864)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(253, 25)
+        Me.Label10.TabIndex = 34
+        Me.Label10.Text = "Enwicklermodus aktivieren?"
+        '
+        'CheckBox7
+        '
+        Me.CheckBox7.AutoSize = True
+        Me.CheckBox7.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.CheckBox7.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox7.ForeColor = System.Drawing.Color.White
+        Me.CheckBox7.Location = New System.Drawing.Point(428, 872)
+        Me.CheckBox7.Name = "CheckBox7"
+        Me.CheckBox7.Size = New System.Drawing.Size(78, 31)
+        Me.CheckBox7.TabIndex = 33
+        Me.CheckBox7.Text = "Nein"
+        Me.CheckBox7.UseVisualStyleBackColor = True
+        '
+        'CheckBox8
+        '
+        Me.CheckBox8.AutoSize = True
+        Me.CheckBox8.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.CheckBox8.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox8.ForeColor = System.Drawing.Color.White
+        Me.CheckBox8.Location = New System.Drawing.Point(376, 872)
+        Me.CheckBox8.Name = "CheckBox8"
+        Me.CheckBox8.Size = New System.Drawing.Size(54, 31)
+        Me.CheckBox8.TabIndex = 32
+        Me.CheckBox8.Text = "Ja"
+        Me.CheckBox8.UseVisualStyleBackColor = True
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.Label3.Font = New System.Drawing.Font("Arial", 30.0!, System.Drawing.FontStyle.Bold)
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(1694, 1025)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(214, 46)
+        Me.Label3.TabIndex = 38
+        Me.Label3.Text = "$UHRZEIT"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.Label2.Font = New System.Drawing.Font("Arial", 30.0!, System.Drawing.FontStyle.Bold)
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(1461, 1025)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(181, 46)
+        Me.Label2.TabIndex = 37
+        Me.Label2.Text = "$DATUM"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.Label1.Font = New System.Drawing.Font("Arial", 17.0!)
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(61, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(12, 1041)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(1301, 26)
+        Me.Label1.TabIndex = 36
+        Me.Label1.Text = "WASTL Infoscreen 3.2 | Powered by FF Krems | A. Suppan, S. Spanninger, E. Bachmay" &
+    "er, G. Urschler | www.feuerwehr-krems.at"
+        '
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
@@ -373,8 +403,21 @@ Partial Class admin
         Me.PictureBox1.Location = New System.Drawing.Point(0, 1015)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(1920, 65)
-        Me.PictureBox1.TabIndex = 4
+        Me.PictureBox1.TabIndex = 35
         Me.PictureBox1.TabStop = False
+        '
+        'LinkLabel5
+        '
+        Me.LinkLabel5.AutoSize = True
+        Me.LinkLabel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer))
+        Me.LinkLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.0!)
+        Me.LinkLabel5.LinkColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.LinkLabel5.Location = New System.Drawing.Point(260, 925)
+        Me.LinkLabel5.Name = "LinkLabel5"
+        Me.LinkLabel5.Size = New System.Drawing.Size(144, 32)
+        Me.LinkLabel5.TabIndex = 39
+        Me.LinkLabel5.TabStop = True
+        Me.LinkLabel5.Text = "Speichern"
         '
         'admin
         '
@@ -382,7 +425,14 @@ Partial Class admin
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1920, 1080)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.LinkLabel5)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.CheckBox7)
+        Me.Controls.Add(Me.CheckBox8)
         Me.Controls.Add(Me.LinkLabel4)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
@@ -406,10 +456,6 @@ Partial Class admin
         Me.Controls.Add(Me.LinkLabel2)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "admin"
@@ -420,11 +466,6 @@ Partial Class admin
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label1 As Label
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Timer1 As Timer
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents LinkLabel1 As LinkLabel
@@ -449,5 +490,12 @@ Partial Class admin
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents LinkLabel4 As LinkLabel
-    Friend WithEvents Button1 As Button
+    Friend WithEvents Label10 As Label
+    Friend WithEvents CheckBox7 As CheckBox
+    Friend WithEvents CheckBox8 As CheckBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents LinkLabel5 As LinkLabel
 End Class
